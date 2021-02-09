@@ -1,0 +1,18 @@
+Things to test:
+
+change histories points
+get it to map percentage change somehow
+use correlated stocks
+try training on several stocks then use same model to predict each. i.e. concatenate their values together?
+determine if there is a relationship between predicted value and the likelihood of going up/down
+	i.e. is a large predicted rise more likely to be a rise (small or big) than a small prediction?
+	
+fine-tune trading threshold 
+
+why does it do poorly on cheaper stocks?
+
+play with different chunks of time in the stock
+
+use other technical indicators as well
+
+play with trading also, how/when to buy/sell
