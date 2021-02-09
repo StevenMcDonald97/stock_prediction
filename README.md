@@ -1,8 +1,8 @@
-# Stock Trading with Machine Learning
+# Stock Trading ML Algorithm
 
 ## Overview
+Based off article: [Medium Article](https://medium.com/towards-data-science/getting-rich-quick-with-machine-learning-and-stock-market-predictions-696802da94fe)
 
-A stock trading bot that uses machine learning to make price predictions.
 
 ## Requirements
 
@@ -19,7 +19,7 @@ A stock trading bot that uses machine learning to make price predictions.
 
 [Blog Post](https://yacoubahmed.me/blog/stock-prediction-ml)
 
-[Medium Article](https://medium.com/towards-data-science/getting-rich-quick-with-machine-learning-and-stock-market-predictions-696802da94fe)
+
 
 ## Train your own model
 
@@ -32,6 +32,4 @@ A stock trading bot that uses machine learning to make price predictions.
 7. Train the model `python tech_ind_model.py` or `python basic_model.py`
 8. Try the trading algorithm on the newly saved model `python trading_algo.py`
 
-## License
 
-[GPL-3.0](https://www.gnu.org/licenses/quick-guide-gplv3.html)
