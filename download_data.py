@@ -15,7 +15,7 @@ params = {'function': 'TIME_SERIES_DAILY',
 		 'symbol': '%s' % (sys.argv[1]),
 		 'outputsize':'full',
 		 'datatype': 'csv',
-		 'apikey': 'SC76ER3ZLB1YENSP'}
+		 'apikey': ''}
 
 response = requests.get(base_url, params=params)
 
