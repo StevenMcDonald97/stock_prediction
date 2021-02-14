@@ -2,3 +2,4 @@
 **/models/
 **/graphs/
 venv/
+download_data.py

@@ -20,13 +20,13 @@ y_test = next_day_open_values[n:]
 
 unscaled_y_test = unscaled_y[n:]
 
-y_test_predicted = model.predict([ohlcv_test, tech_ind_test])
+y_test_predicted = model.predict([tech_ind_test])
 y_test_predicted = y_normaliser.inverse_transform(y_test_predicted)
 
 buys = []
 sells = []
 buy_threshold = .01
-sell_threshold = .01
+sell_threshold = .02
 
 start = 0
 end = -1
@@ -43,7 +43,8 @@ for ohlcv, ind in zip(ohlcv_test[start: end], tech_ind_test[start: end]):
     ohlcv = np.expand_dims(ohlcv, axis=0)
     ind = np.expand_dims(ind, axis=0)
     # predict price for tomorrow and turn into 0D array
-    predicted_price_tomorrow = np.squeeze(y_normaliser.inverse_transform(model.predict([ohlcv, ind])))
+    # predicted_price_tomorrow = np.squeeze(y_normaliser.inverse_transform(model.predict([ohlcv, ind])))
+    predicted_price_tomorrow = np.squeeze(y_normaliser.inverse_transform(model.predict([ind])))
     delta = (predicted_price_tomorrow - price_today)/price_today
     if delta > buy_threshold:
         buys.append((x, price_today[0][0]))

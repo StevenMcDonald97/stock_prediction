@@ -16,3 +16,11 @@ play with different chunks of time in the stock
 use other technical indicators as well
 
 play with trading also, how/when to buy/sell
+
+try using just technical indicators
+
+try each tech indicator indvidiually
+
+is it better to buy just before close in the day?
+
+for determining next day buy, use difference relative to last predictions instead of real?

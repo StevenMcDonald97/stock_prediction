@@ -92,8 +92,8 @@ def csv_to_dataset(csv_path):
         # technical_indicators.append(np.array([macd]))
         # technical_indicators.append(np.array([obv]))
         # technical_indicators.append(np.array([rsi])) # JUST RSI WORKS BEST FOR ADBE
-        technical_indicators.append(np.array([obv,sma,]))
-        # technical_indicators.append(np.array([sma,macd,obv,rsi]))
+        # technical_indicators.append(np.array([sma,rsi,]))
+        technical_indicators.append(np.array([sma,macd,obv,rsi]))
 
     technical_indicators = np.array(technical_indicators)
 
